@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <preparePlanResponse xmlns="http://api">
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>0.0</point_Accl>
+        <point_Coordinates>120.0;140.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.0</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>1</preferred_Order>
+        <req_id>1</req_id>
+        <time>0</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,-12.117130925875614,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>7.363240682777611E-5</point_Accl>
+        <point_Coordinates>120.0;192.1171309258756</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>2</preferred_Order>
+        <req_id>1</req_id>
+        <time>521</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>7.363240682777611E-5</point_Accl>
+        <point_Coordinates>120.0;180.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>3</preferred_Order>
+        <req_id>2</req_id>
+        <time>521</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,4.71039080211267,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>1.6059658195489995E-4</point_Accl>
+        <point_Coordinates>120.0;215.28960919788733</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>4</preferred_Order>
+        <req_id>2</req_id>
+        <time>873</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>1.6059658195489995E-4</point_Accl>
+        <point_Coordinates>120.0;220.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>5</preferred_Order>
+        <req_id>3</req_id>
+        <time>873</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,-0.10237812955693926,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>4.7303595198526553E-4</point_Accl>
+        <point_Coordinates>120.0;260.10237812955694</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1950303520067517</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>6</preferred_Order>
+        <req_id>3</req_id>
+        <time>1078</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>4.7303595198526553E-4</point_Accl>
+        <point_Coordinates>120.0;260.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1950303520067517</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>7</preferred_Order>
+        <req_id>4</req_id>
+        <time>1078</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,-3.6083418890561916,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>3.47371085105665E-4</point_Accl>
+        <point_Coordinates>120.0;303.6083418890562</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.18174037034501464</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>8</preferred_Order>
+        <req_id>4</req_id>
+        <time>1317</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>3.47371085105665E-4</point_Accl>
+        <point_Coordinates>120.0;300.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.18174037034501464</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>9</preferred_Order>
+        <req_id>5</req_id>
+        <time>1317</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,9.715111907499534,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>3.808906361038053E-4</point_Accl>
+        <point_Coordinates>120.0;330.28488809250047</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.13216337587440613</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>10</preferred_Order>
+        <req_id>5</req_id>
+        <time>1546</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Mon</weekday>
+      </preparePlanReturn>
+    </preparePlanResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <preparePlan xmlns="http://api">
+      <routePoints>
+        <hide xmlns="http://pojo.api">false</hide>
+        <periodid xmlns="http://pojo.api">2272</periodid>
+        <point_Coordinates xmlns="http://pojo.api">120;140</point_Coordinates>
+        <point_Name xsi:nil="true" xmlns="http://pojo.api"/>
+        <point_Orientation xmlns="http://pojo.api">90</point_Orientation>
+        <point_Speed xmlns="http://pojo.api">0</point_Speed>
+        <pointid xmlns="http://pojo.api">278</pointid>
+        <preferred_Order xmlns="http://pojo.api">1</preferred_Order>
+        <req_id xmlns="http://pojo.api">1</req_id>
+        <time xmlns="http://pojo.api">19:14:22</time>
+        <user_Message xsi:nil="true" xmlns="http://pojo.api"/>
+        <weekday xmlns="http://pojo.api">Mon</weekday>
+      </routePoints>
+      <routePoints>
+        <hide xmlns="http://pojo.api">false</hide>
+        <periodid xmlns="http://pojo.api">2275</periodid>
+        <point_Coordinates xmlns="http://pojo.api">120;300</point_Coordinates>
+        <point_Name xsi:nil="true" xmlns="http://pojo.api"/>
+        <point_Orientation xmlns="http://pojo.api">90</point_Orientation>
+        <point_Speed xmlns="http://pojo.api">0</point_Speed>
+        <pointid xmlns="http://pojo.api">313</pointid>
+        <preferred_Order xmlns="http://pojo.api">3</preferred_Order>
+        <req_id xmlns="http://pojo.api">2</req_id>
+        <time xmlns="http://pojo.api">19:14:22</time>
+        <user_Message xsi:nil="true" xmlns="http://pojo.api"/>
+        <weekday xmlns="http://pojo.api">Mon</weekday>
+      </routePoints>
+      <routePoints>
+        <hide xmlns="http://pojo.api">false</hide>
+        <periodid xmlns="http://pojo.api">2276</periodid>
+        <point_Coordinates xmlns="http://pojo.api">120;170</point_Coordinates>
+        <point_Name xsi:nil="true" xmlns="http://pojo.api"/>
+        <point_Orientation xmlns="http://pojo.api">90</point_Orientation>
+        <point_Speed xmlns="http://pojo.api">0</point_Speed>
+        <pointid xmlns="http://pojo.api">384</pointid>
+        <preferred_Order xmlns="http://pojo.api">4</preferred_Order>
+        <req_id xmlns="http://pojo.api">3</req_id>
+        <time xmlns="http://pojo.api">19:14:22</time>
+        <user_Message xsi:nil="true" xmlns="http://pojo.api"/>
+        <weekday xmlns="http://pojo.api">Mon</weekday>
+      </routePoints>
+      <routePoints>
+        <hide xmlns="http://pojo.api">false</hide>
+        <periodid xmlns="http://pojo.api">2277</periodid>
+        <point_Coordinates xmlns="http://pojo.api">120;220</point_Coordinates>
+        <point_Name xsi:nil="true" xmlns="http://pojo.api"/>
+        <point_Orientation xmlns="http://pojo.api">90</point_Orientation>
+        <point_Speed xmlns="http://pojo.api">0</point_Speed>
+        <pointid xmlns="http://pojo.api">396</pointid>
+        <preferred_Order xmlns="http://pojo.api">5</preferred_Order>
+        <req_id xmlns="http://pojo.api">4</req_id>
+        <time xmlns="http://pojo.api">19:14:22</time>
+        <user_Message xsi:nil="true" xmlns="http://pojo.api"/>
+        <weekday xmlns="http://pojo.api">Mon</weekday>
+      </routePoints>
+      <routePoints>
+        <hide xmlns="http://pojo.api">false</hide>
+        <periodid xmlns="http://pojo.api">2278</periodid>
+        <point_Coordinates xmlns="http://pojo.api">120;180</point_Coordinates>
+        <point_Name xsi:nil="true" xmlns="http://pojo.api"/>
+        <point_Orientation xmlns="http://pojo.api">90</point_Orientation>
+        <point_Speed xmlns="http://pojo.api">0</point_Speed>
+        <pointid xmlns="http://pojo.api">279</pointid>
+        <preferred_Order xmlns="http://pojo.api">6</preferred_Order>
+        <req_id xmlns="http://pojo.api">5</req_id>
+        <time xmlns="http://pojo.api">19:14:22</time>
+        <user_Message xsi:nil="true" xmlns="http://pojo.api"/>
+        <weekday xmlns="http://pojo.api">Mon</weekday>
+      </routePoints>
+    </preparePlan>
+  </s:Body>
+</s:Envelope>

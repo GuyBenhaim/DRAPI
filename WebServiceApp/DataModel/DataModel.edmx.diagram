@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b70ec5e5b50f4273a7738bd02c7cc4fb" Name="Diagram1" ZoomLevel="84">
+        <EntityTypeShape EntityType="apidb_15JulModel.Point" Width="1.5" PointX="0.5" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Actions_Type" Width="1.5" PointX="8" PointY="11.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Period" Width="1.5" PointX="2.625" PointY="16.75" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Period_Period" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Period_Points" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Period_Points1" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Period_Points2" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Period_Points3" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Period_Points4" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Period_Points5" />
+        <EntityTypeShape EntityType="apidb_15JulModel.User_Periods" Width="1.5" PointX="6" PointY="26.5" />
+        <EntityTypeShape EntityType="apidb_15JulModel.RouteType" Width="1.5" PointX="6.875" PointY="33.25" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Box" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Object" Width="1.5" PointX="1.625" PointY="26.5" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Point_Type" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Object_Types" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Hierarchy" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Box_State" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Point_Periods" Width="1.5" PointX="9.875" PointY="3.875" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Route_Point_Points" />
+        <EntityTypeShape EntityType="apidb_15JulModel.CTConfig" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Arry" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.ArryMul" Width="1.5" PointX="0.875" PointY="6.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Container_Periods" Width="1.5" PointX="12.75" PointY="13" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Route" Width="1.5" PointX="3.875" PointY="26.5" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Container_Periods_Routes" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Route_Point_Routes" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Routes_RouteType" />
+        <AssociationConnector Association="apidb_15JulModel.FK_User_Periods_Routes" />
+        <EntityTypeShape EntityType="apidb_15JulModel.ARConfig" Width="1.5" PointX="15.125" PointY="9.625" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Containers" Width="1.5" PointX="12.5" PointY="0.75" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Container_Periods_Containers" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Containers_Containers" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Object_Vector" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Object_Periods" Width="1.5" PointX="18.25" PointY="16.375" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Object_Periods_Actions_Type" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Object_Periods_Objects" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Object_Periods_Points" />
+        <AssociationConnector Association="apidb_15JulModel.FK_Object_Periods_Routes" />
+        <EntityTypeShape EntityType="apidb_15JulModel.SegmentTracking" Width="1.5" PointX="2.625" PointY="9.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Session" Width="1.5" PointX="5.375" PointY="16.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.AdminState" Width="1.5" PointX="5.375" PointY="8.75" />
+        <EntityTypeShape EntityType="apidb_15JulModel.Object_Periods_Files" Width="1.5" PointX="17.375" PointY="0.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

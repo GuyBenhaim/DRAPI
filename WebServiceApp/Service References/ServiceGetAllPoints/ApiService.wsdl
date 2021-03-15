@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetObjectForAllPoints">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RouteID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetObjectForAllPointsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetObjectForAllPointsResult" type="tns:ArrayOfRouteObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRouteObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RouteObject" nillable="true" type="tns:RouteObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RouteObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Action_OK" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPHierarchy" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OPHierarchy" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Routeid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Periodid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Containerid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pointperiodid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Objectperiodid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="State0" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Plan_Index" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="weekday" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StdTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Coordinates" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_Orientation" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_Time" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_Speed" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_Accl" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_Steering" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Error" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Original" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Snd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Pic" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Preferred_Order" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Object_Action_ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Action_Caption" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Action_Duration" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Expected_Duration" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Action_Pic" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Action_Snd" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Object_ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Object_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Object_Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Object_Type_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Object_Type_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Object_Time" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Object_Pic" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Object_Snd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Play_Seq" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Time_Span" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Location_Span" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Container_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Container_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Box_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Compartment_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comp_Code" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetInfoForAllPoints">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RouteID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoForAllPointsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoForAllPointsResult" type="tns:ArrayOfRouteObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPathForAllPoints">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RouteID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPathForAllPointsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPathForAllPointsResult" type="tns:ArrayOfRouteObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimeForAllPoints">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RouteID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimeForAllPointsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimeForAllPointsResult" type="tns:ArrayOfRoutePointDate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRoutePointDate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RoutePointDate" nillable="true" type="tns:RoutePointDate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RoutePointDate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Pointid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Periodid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Coordinates" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Preferred_Order" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Containerid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="User_Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Time" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Weekday" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Hide" nillable="true" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPackingList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RouteID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPackingListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPackingListResult" type="tns:ArrayOfRouteObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPoints">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RouteID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPointsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPointsResult" type="tns:ArrayOfRoutePoints" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRoutePoints">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RoutePoints" nillable="true" type="tns:RoutePoints" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RoutePoints">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Route_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Route_Number" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Route_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Preferred_Order" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="User_Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Notification" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Point_Coordinates" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Distance" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserRoutes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRoutesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserRoutesResult" type="tns:ArrayOfUserRouteDate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUserRouteDate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserRouteDate" nillable="true" type="tns:UserRouteDate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserRouteDate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Route_Number" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Route_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Route_Type" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Start_Point" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Route_Carrier_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Route_ID" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRouteAlerts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SessionID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRouteAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRouteAlertsResult" type="tns:ArrayOfRouteAlerts" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRouteAlerts">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RouteAlerts" nillable="true" type="tns:RouteAlerts" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RouteAlerts">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Alert_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Alert_Type_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Alert_Type_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Alert_Caption" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Alert_Time" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Alert_Severity" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Alert_Order" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Route_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Object_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Obj_Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetEntityChannels">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EntityType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EntityID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEntityChannelsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEntityChannelsResult" type="tns:ArrayOfEntityChannels" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEntityChannels">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EntityChannels" nillable="true" type="tns:EntityChannels" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EntityChannels">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Channel_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Channel_Type_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Channel_Type_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Channel_Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address_Details" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Channel_Type_Order" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRouteUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RouteID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRouteUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRouteUsersResult" type="tns:ArrayOfRouteUsersModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRouteUsersModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RouteUsersModel" nillable="true" type="tns:RouteUsersModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RouteUsersModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="User_ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="User_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="User_Type_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="User_Type_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="User_Type_Order" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRouteCarriers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RouteID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRouteCarriersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRouteCarriersResult" type="tns:ArrayOfRouteCarriersModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRouteCarriersModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RouteCarriersModel" nillable="true" type="tns:RouteCarriersModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RouteCarriersModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Carrier_ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Carrier_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Carrier_Type_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Carrier_Type_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Carrier_Type_Order" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBeacons">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FacID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBeaconsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBeaconsResult" type="tns:ArrayOfBeacons" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBeacons">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Beacons" nillable="true" type="tns:Beacons" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Beacons">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Beacon_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fac_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Beacon_Type_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Beacon_Number" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beacon_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="User_Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beacon_Coordinates" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beacon_Orientation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beacon_Error" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beacon_Pic" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLoads">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Point_Type_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Route_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Admin_State" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoadsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLoadsResult" type="tns:ArrayOfLoadSources" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLoadSources">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LoadSources" nillable="true" type="tns:LoadSources" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LoadSources">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Route_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_Type_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Session_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Preferred_Order" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Object_Time" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Action_Time" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Complete_Time" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Expected_Duration" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Arrived" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToCompletion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Arrival" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetArrivals">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Route_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Point_Type_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Point_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Admin_State" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ObserveTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArrivalsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArrivalsResult" type="tns:ArrayOfArrivals" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArrivals">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Arrivals" nillable="true" type="tns:Arrivals" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Arrivals">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Route_ID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Session_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_Type_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Point_ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Preferred_Order" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Arrived" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToCompletion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Arrival" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetObjectForAllPointsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetObjectForAllPoints" />
+  </wsdl:message>
+  <wsdl:message name="GetObjectForAllPointsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetObjectForAllPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoForAllPointsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoForAllPoints" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoForAllPointsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoForAllPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPathForAllPointsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPathForAllPoints" />
+  </wsdl:message>
+  <wsdl:message name="GetPathForAllPointsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPathForAllPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeForAllPointsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTimeForAllPoints" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeForAllPointsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTimeForAllPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPackingListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPackingList" />
+  </wsdl:message>
+  <wsdl:message name="GetPackingListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPackingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPointsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPoints" />
+  </wsdl:message>
+  <wsdl:message name="GetPointsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoutesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserRoutes" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoutesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserRoutesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRouteAlerts" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRouteAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEntityChannelsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEntityChannels" />
+  </wsdl:message>
+  <wsdl:message name="GetEntityChannelsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEntityChannelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRouteUsers" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRouteUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteCarriersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRouteCarriers" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteCarriersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRouteCarriersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBeaconsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBeacons" />
+  </wsdl:message>
+  <wsdl:message name="GetBeaconsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBeaconsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLoadsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLoads" />
+  </wsdl:message>
+  <wsdl:message name="GetLoadsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLoadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArrivalsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArrivals" />
+  </wsdl:message>
+  <wsdl:message name="GetArrivalsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArrivalsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ApiServiceSoap">
+    <wsdl:operation name="GetObjectForAllPoints">
+      <wsdl:input message="tns:GetObjectForAllPointsSoapIn" />
+      <wsdl:output message="tns:GetObjectForAllPointsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoForAllPoints">
+      <wsdl:input message="tns:GetInfoForAllPointsSoapIn" />
+      <wsdl:output message="tns:GetInfoForAllPointsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPathForAllPoints">
+      <wsdl:input message="tns:GetPathForAllPointsSoapIn" />
+      <wsdl:output message="tns:GetPathForAllPointsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeForAllPoints">
+      <wsdl:input message="tns:GetTimeForAllPointsSoapIn" />
+      <wsdl:output message="tns:GetTimeForAllPointsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPackingList">
+      <wsdl:input message="tns:GetPackingListSoapIn" />
+      <wsdl:output message="tns:GetPackingListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPoints">
+      <wsdl:input message="tns:GetPointsSoapIn" />
+      <wsdl:output message="tns:GetPointsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoutes">
+      <wsdl:input message="tns:GetUserRoutesSoapIn" />
+      <wsdl:output message="tns:GetUserRoutesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteAlerts">
+      <wsdl:input message="tns:GetRouteAlertsSoapIn" />
+      <wsdl:output message="tns:GetRouteAlertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityChannels">
+      <wsdl:input message="tns:GetEntityChannelsSoapIn" />
+      <wsdl:output message="tns:GetEntityChannelsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteUsers">
+      <wsdl:input message="tns:GetRouteUsersSoapIn" />
+      <wsdl:output message="tns:GetRouteUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteCarriers">
+      <wsdl:input message="tns:GetRouteCarriersSoapIn" />
+      <wsdl:output message="tns:GetRouteCarriersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBeacons">
+      <wsdl:input message="tns:GetBeaconsSoapIn" />
+      <wsdl:output message="tns:GetBeaconsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoads">
+      <wsdl:input message="tns:GetLoadsSoapIn" />
+      <wsdl:output message="tns:GetLoadsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArrivals">
+      <wsdl:input message="tns:GetArrivalsSoapIn" />
+      <wsdl:output message="tns:GetArrivalsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ApiServiceSoap" type="tns:ApiServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetObjectForAllPoints">
+      <soap:operation soapAction="http://tempuri.org/GetObjectForAllPoints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoForAllPoints">
+      <soap:operation soapAction="http://tempuri.org/GetInfoForAllPoints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPathForAllPoints">
+      <soap:operation soapAction="http://tempuri.org/GetPathForAllPoints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeForAllPoints">
+      <soap:operation soapAction="http://tempuri.org/GetTimeForAllPoints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackingList">
+      <soap:operation soapAction="http://tempuri.org/GetPackingList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoints">
+      <soap:operation soapAction="http://tempuri.org/GetPoints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoutes">
+      <soap:operation soapAction="http://tempuri.org/GetUserRoutes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteAlerts">
+      <soap:operation soapAction="http://tempuri.org/GetRouteAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityChannels">
+      <soap:operation soapAction="http://tempuri.org/GetEntityChannels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteUsers">
+      <soap:operation soapAction="http://tempuri.org/GetRouteUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteCarriers">
+      <soap:operation soapAction="http://tempuri.org/GetRouteCarriers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBeacons">
+      <soap:operation soapAction="http://tempuri.org/GetBeacons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoads">
+      <soap:operation soapAction="http://tempuri.org/GetLoads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArrivals">
+      <soap:operation soapAction="http://tempuri.org/GetArrivals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ApiServiceSoap12" type="tns:ApiServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetObjectForAllPoints">
+      <soap12:operation soapAction="http://tempuri.org/GetObjectForAllPoints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoForAllPoints">
+      <soap12:operation soapAction="http://tempuri.org/GetInfoForAllPoints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPathForAllPoints">
+      <soap12:operation soapAction="http://tempuri.org/GetPathForAllPoints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeForAllPoints">
+      <soap12:operation soapAction="http://tempuri.org/GetTimeForAllPoints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackingList">
+      <soap12:operation soapAction="http://tempuri.org/GetPackingList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoints">
+      <soap12:operation soapAction="http://tempuri.org/GetPoints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoutes">
+      <soap12:operation soapAction="http://tempuri.org/GetUserRoutes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteAlerts">
+      <soap12:operation soapAction="http://tempuri.org/GetRouteAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityChannels">
+      <soap12:operation soapAction="http://tempuri.org/GetEntityChannels" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteUsers">
+      <soap12:operation soapAction="http://tempuri.org/GetRouteUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteCarriers">
+      <soap12:operation soapAction="http://tempuri.org/GetRouteCarriers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBeacons">
+      <soap12:operation soapAction="http://tempuri.org/GetBeacons" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoads">
+      <soap12:operation soapAction="http://tempuri.org/GetLoads" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArrivals">
+      <soap12:operation soapAction="http://tempuri.org/GetArrivals" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ApiService">
+    <wsdl:port name="ApiServiceSoap" binding="tns:ApiServiceSoap">
+      <soap:address location="http://localhost/WebService/ApiService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ApiServiceSoap12" binding="tns:ApiServiceSoap12">
+      <soap12:address location="http://localhost/WebService/ApiService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

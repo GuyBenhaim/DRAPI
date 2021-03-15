@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <preparePlanResponse xmlns="http://api">
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>0.0</point_Accl>
+        <point_Coordinates>120.0;140.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.0</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>1</preferred_Order>
+        <req_id>1</req_id>
+        <time>0</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Sat</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,8.534105670326824,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>2.0199928673530283E-4</point_Accl>
+        <point_Coordinates>120.0;171.46589432967318</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>2</preferred_Order>
+        <req_id>1</req_id>
+        <time>314</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Sat</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>2.0199928673530283E-4</point_Accl>
+        <point_Coordinates>120.0;180.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>3</preferred_Order>
+        <req_id>2</req_id>
+        <time>314</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Sat</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,3.8845787510979903,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>4.051305903356521E-4</point_Accl>
+        <point_Coordinates>120.0;216.115421248902</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1625455953136991</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>4</preferred_Order>
+        <req_id>2</req_id>
+        <time>536</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Sat</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>4.051305903356521E-4</point_Accl>
+        <point_Coordinates>120.0;220.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1625455953136991</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>5</preferred_Order>
+        <req_id>3</req_id>
+        <time>536</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Sat</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,-3.331826080540395,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>3.283956993541161E-4</point_Accl>
+        <point_Coordinates>120.0;263.3318260805404</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1755863390826055</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>6</preferred_Order>
+        <req_id>3</req_id>
+        <time>782</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Sat</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,0.0,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>3.283956993541161E-4</point_Accl>
+        <point_Coordinates>120.0;260.0</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1755863390826055</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>7</preferred_Order>
+        <req_id>4</req_id>
+        <time>782</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Sat</weekday>
+      </preparePlanReturn>
+      <preparePlanReturn>
+        <error>0.0,1.230449721896207,0.0</error>
+        <hide>false</hide>
+        <original>true</original>
+        <periodid xsi:nil="true"/>
+        <point_Accl>2.3806781073994033E-4</point_Accl>
+        <point_Coordinates>120.0;298.7695502781038</point_Coordinates>
+        <point_Name xsi:nil="true"/>
+        <point_Orientation>90.0</point_Orientation>
+        <point_Speed>0.1337599520932416</point_Speed>
+        <point_Steering>0.0</point_Steering>
+        <pointid xsi:nil="true"/>
+        <preferred_Order>8</preferred_Order>
+        <req_id>4</req_id>
+        <time>1071</time>
+        <user_Message>&quot;default_user_message&quot;</user_Message>
+        <weekday>Sat</weekday>
+      </preparePlanReturn>
+    </preparePlanResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
